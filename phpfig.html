@@ -1,0 +1,427 @@
+<!--
+Google IO 2012/2013 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="logoslide nobackground">
+    <article class="flexbox vcenter">
+      <span><img src="images/pragmore.png"></span>
+    </article>
+  </slide>
+
+  <slide class="title-slide segue nobackground">
+    <aside class="gdbar"><img src="images/pragmore_small.png"></aside>
+    <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1>PHP FIG</h1>
+      <h2>PHP is getting real!</h2>
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated fromaticamente la mayoría de los problemasslide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>PHP FIG</h2>
+      <h3>PHP is getting real!</h3>
+    </hgroup>
+    <article>
+      <ul>
+        <li>Estándares</li>
+        <li>Acerca de PHP FIG</li>
+        <li>Los PSR</li>
+        <li>Como nos afecta este grupo y sus recomendaciones</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Estándares</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <span><img src="images/xkcd_standards.png"></span>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Estándares</h2>
+      <h3>En la "vida real"</h3>
+    </hgroup>
+    <article>
+      <ul class="build">
+          <li><b>Si tenemos estándares en:</b></li>
+          <li>Cargadores de celulares</li>
+          <li>Electricidad <em>(¡Importante: Si alguno va al mundial de Brasil son 110 voltios!)</em></li>
+          <li>Auriculares</li>
+      </ul>
+      <ul class="build">
+          <li><b>No tenemos estándares en:</b></li>
+          <li>La ropa (small, medium, large)</li>
+          <li>Los platos en los restaurantes</li>
+          <li>Como escribir ironías en Internet</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Estándares</h2>
+      <h3>De facto vs De jure</h3>
+    </hgroup>
+    <article>
+      <ul class="build">
+          <li><b>De jure:</b></li>
+          <li>ANSI C</li>
+          <li>SQL 92 (también es ANSI)</li>
+          <li>XML</li>
+      </ul>
+      <ul class="build">
+          <li><b>De facto:</b></li>
+          <li>PDF</li>
+          <li>CSV</li>
+          <li>PHP</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Acerca de PHP FIG</h2>
+      <h3>Framework Interoperability Group</h3>
+    </hgroup>
+    <article>
+        <p><a href="http://www.php-fig.org/">www.php-fig.org</a></p>
+        <p>La idea detrás del grupo es hablar acerca de las cosas en común que existen entre nuestros proyectos y encontrar una manera para poder trabajar juntos. <b>Nuestra principal audiencia somos nosotros</b>, pero estamos muy al tanto que el resto de la comunidad de PHP lo esta viendo. Si otros amigos quieren adoptar lo que estamos haciendo están bienvenidos para hacerlos, pero ese no es el objetivo.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Acerca de PHP FIG</h2>
+    </hgroup>
+    <article class="smaller">
+              <div class="columns-2">
+        <ul>
+      <li>Agavi</li>
+      <li>AWS SDK for PHP (Amazon Web Services)</li>
+      <li>Apache log4php</li>
+      <li>Assetic and Buzz</li>
+      <li>Aura Project and Solar Framework</li>
+      <li><b>CakePHP</b></li>
+      <li>Composer and Packagist</li>
+      <li>Contao Open Source CMS</li>
+      <li>Doctrine</li>
+      <li>Drupal</li>
+      <li>eZ Publish</li>
+      <li>TYPO3 Flow</li>
+      <li>Jackalope</li>
+      <li>Joomla</li>
+      <li><b>Laravel</b></li>
+      <li>Lithium</li>
+      <li>PEAR</li>
+      <li>Phalcon</li>
+      <li>Phing</li>
+      <li>phpBB</li>
+      <li>phpDocumentor</li>
+      <li>PPI Framework</li>
+      <li>PrestaShop</li>
+      <li>Propel</li>
+      <li>PyroCMS</li>
+      <li>SabreDAV</li>
+      <li>Sculpin</li>
+      <li>Stash</li>
+      <li>SugarCRM</li>
+      <li><b>Symfony2</b></li>
+      <li>Wikibase and Semantic MediaWiki</li>
+      <li>Yii framework</li>
+      <li><b>Zend Framework 2</b></li>
+      <li>Zikula</li>
+        </ul>
+    </div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Los PSR</h2>
+    </hgroup>
+    <article>
+        <p><b>PHP Standard Recommendation</b></p>
+        <p>Por ahora son cinco.</p>
+        <p>Los propone cualquiera de la comunidad y los aprueban entre todos por votación.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Los PSR</h2>
+    </hgroup>
+    <article>
+<p><b>PSR-0 Autoloading</b> Los requisitos obligatorios que deben cumplirse para la interoperabilidad del autoloader.</p>
+      <pre class="prettyprint" data-lang="php">
+function autoload($className)
+{
+    $className = ltrim($className, '\\');
+    $fileName  = '';
+    $namespace = '';
+    if ($lastNsPos = strrpos($className, '\\')) {
+        $namespace = substr($className, 0, $lastNsPos);
+        $className = substr($className, $lastNsPos + 1);
+        $fileName  = str_replace('\\', DIRECTORY_SEPARATOR, $namespace) 
+                   . DIRECTORY_SEPARATOR;
+    }
+    $fileName .= str_replace('_', DIRECTORY_SEPARATOR, $className) . '.php';
+    require $fileName;
+}      
+</pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Los PSR</h2>
+    </hgroup>
+    <article>
+    <aside class="note">
+      <section>
+        <ul>
+            <li>Además el archivo tiene que estar en UTF-8 sin BOM</li>
+            <li>Las propiedades pueden tomar cualquier forma pero deben mantener la misma a travéz de todo el código</li>
+            <li>O declaras estructura o ejecutas código</li>
+        </ul>
+      </section>
+    </aside>
+<p><b>PSR-1 Codificación básica</b> La norma de codificación de los elementos que se requieren para garantizar un alto nivel técnico de interoperabilidad entre el código PHP.</p>
+      <pre class="prettyprint" data-lang="php">
+&lt;?php
+namespace Pragmore\MiSuperComponente;
+
+class StudlyCaps
+{
+    const CONSTANTE_EN_MAYUSCULAS = "Y separadas con guión bajo";
+    protected $una_propiedad; // Aunque también puede ser $unaPropiedad o $UnaPropiedad
+    public function miMetodo()
+    {
+    }
+}
+// No puedo escribir aca mismo 
+// $sc = new StudlyCaps();
+</pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Los PSR</h2>
+    </hgroup>
+    <article class="smaller">
+    <aside class="note">
+      <section>
+        <ul>
+            <li>4 espacios sin tabs</li>
+            <li>Salto de línea después de namespace y de los use.</li>
+            <li>Extends e implements en la misma línea pero si hay mas de un implement pueden ir en múltiples líneas.</li>
+            <li>Todas las propiedades con visibilidad.</li>
+            <li>Después de la clase y de un método la llave va abajo.</li>
+            <li>Las estructuras de control tienen que tener un espacio entre los () y los {}.</li>
+            <li>Y más...</li>
+        </ul>
+      </section>
+    </aside>
+<p><b>PSR-2 Guía de estilo de codificación</b> Extiende el PSR-1.</p>
+      <pre class="prettyprint" data-lang="php">
+&lt;?php
+namespace Pragmore\MiSuperComponente;
+
+use FooInterfaz;
+use BarClase as Bar;
+
+class StudlyCaps extends Bar implements FooInterfaz
+{
+    public function funcionDeEjemplo($a, $b = null)
+    {
+        if ($a === $b) {
+            bar();
+        } elseif ($a > $b) {
+            $foo->bar($arg1);
+        }
+    }
+
+    final public static function bar()
+    {
+        return true; 
+    }
+}
+</pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Los PSR</h2>
+    </hgroup>
+    <article>
+<p><b>PSR-3 Interfaz de Logger</b> El objetivo principal es permitir a todas las librerías usar un objecto Psr\Log\LoggerInterface y escribir logs con él de manera simple y universal.</p>
+<p><b>PSR-4 Autoloader Mejorado</b> Extensión de PSR-0. Básicamente se quita el soporte para las clases que tenían <b>_</b> (guión bajo) en el mundo pre-namespaces.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Como nos afecta</h2>
+        <h3>¿Cómo afectó al ecosistema hasta ahora?</h3>
+    </hgroup>
+    <article>
+    <aside class="note">
+      <section>
+        <p>Drupal 8 no se apoya solamente en los PSR sino también en Symfony 2.</p>
+      </section>
+    </aside>
+        <ul class="build">
+            <li>Symfony 2 y Zend Framework 2 son mucho mas parecidos en código que antes (sfSomeClass vs Zend_Some_Class)</li>
+            <li>Drupal 8 <a href="https://drupal.org/drupal-8.0/features#standard">[2]</a></li>
+            <li>Composer <a href="http://getcomposer.org/">[1]</a></li>
+            <li>Symfony 2 cambió la manera que carga sus bundles gracias a Composer</li>
+        </ul>
+    </article>
+  </slide>
+  <slide>
+    <hgroup>
+      <h2>Como nos afecta</h2>
+        <h3>¿Cómo afecta esto a tu empresa?</h3>
+    </hgroup>
+    <article>
+        <ul class="build">
+            <li>No pierdo tiempo desarrollando un estándar de código.</li>
+            <li>Usar PSR-4 para estructurar mi componente o framework.</li>
+            <li>La API que desarrollo para el cliente es fácil de integrar.</li>
+        </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Como nos afecta</h2>
+        <h3>¿Alguien por favor puede pensar en los n̶i̶ñ̶o̶s̶  freelancers?</h3>
+    </hgroup>
+    <article>
+        <ul class="build">
+            <li>Si mis clientes son técnicos pueden ver mi código mas profesional.</li>
+            <li>Si mis clientes <b>no</b> son técnicos no les influye para nada.</li>
+        </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Como nos afecta</h2>
+        <h3>CodeSniffer</h3>
+    </hgroup>
+    <article class="smaller">
+        <img src="images/phpcs.png" alt="PHP_CodeSniffer" width="100%" />
+        <p>La manera mas fácil de instalarlo es con <b>pear</b>, lo ejecutas desde consola pero por supuesto lo podes integrar a tu IDE.</p>
+      <pre class="prettyprint">
+      pear install PHP_CodeSniffer
+      phpcs --standard=PSR2 /path/to/file.php
+      </pre>
+    </article>
+  </slide>
+  <slide>
+    <hgroup>
+      <h2>Como nos afecta</h2>
+        <h3>PHP Coding Standards Fixer</h3>
+    </hgroup>
+    <article class="smaller">
+        <p>La misma herramienta que la anterior pero arregla automáticaticamente la mayoría de los problemas.</p>
+        <p>Del creador de Symfony</p>
+        <p>Se puede descargar y ver la doc desde <a href="http://cs.sensiolabs.org/">cs.sensiolabs.org</a></p>
+      <pre class="prettyprint">
+      php php-cs-fixer.phar fix /path/to/file 
+      </pre>
+    </article>
+  </slide>
+  <slide>
+    <hgroup>
+      <h2>Como nos afecta</h2>
+        <h3>Hablemos sin saber: futuro de PHP</h3>
+    </hgroup>
+    <article>
+        <ul class="build">
+            <li>Cache</li>
+            <li>Error Handler</li>
+            <li>HTTP Message</li>
+            <li>Admin CMS</li>
+            <li>Autenticación y ACL</li>
+        </ul>
+    </article>
+  </slide>
+
+  <slide class="segue dark quote nobackground">
+    <article class="flexbox vleft auto-fadein">
+      <q>They're recommendations people; they're not requirements</q>
+      <div class="author">
+        Matthew Weier O'Phinney<br>
+        Project Leader de Zend Framework 
+      </div>
+    </article>
+  </slide>
+
+  <slide class="thank-you-slide segue nobackground">
+    <aside class="gdbar right"><img src="images/pragmore_small.png"></aside>
+    <article class="flexbox vleft auto-fadein">
+      <h2>¡Gracias!</h2>
+      <p>albo (arroba) pragmore.com</p>
+    </article>
+    <p class="auto-fadein" data-config-contact>
+      <!-- populated from slide_config.json -->
+    </p>
+  </slide>
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>
